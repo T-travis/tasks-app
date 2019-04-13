@@ -12,7 +12,7 @@ async function createTask() {
   document.getElementById("inputTask").value = "";
   if (validateInput(task)) {
     try {
-      const URL = 'https://api.travistackett.net/v1/tasks';
+      const URL = '************************';
       await axios.post(URL, {
         task: task
       });
@@ -40,7 +40,7 @@ function validateInput(task) {
 async function deleteThisItem(taskID) {
   if (confirm("Are you sure you want to DELETE this task?")) {
     try {
-      const URL = `https://api.travistackett.net/v1/tasks/${taskID}`;
+      const URL = `********************************`;
       await axios.delete(URL);
       getTasks();
     } catch (err) {
@@ -89,7 +89,7 @@ async function update(taskID, task, callback) {
   if (validateInput(task)) {
     try {
       //console.log(taskID)
-      const URL = `https://api.travistackett.net/v1/tasks/${taskID}`;
+      const URL = `*******************************`;
       let test = await axios.put(URL, {
         task: task
       });
@@ -165,7 +165,7 @@ function createList(data) {
 // get all tasks using tasks api
 async function getTasks() {
   // Make a request for a user with a given ID
-  const URL = 'https://api.travistackett.net/v1/tasks';
+  const URL = '**********************';
   try {
     const data = await axios.get(URL);
     await createList(data.data);
