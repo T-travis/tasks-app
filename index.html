@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tasks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <!-- materialize css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/tasks-app/node_modules/materialize-css/dist/css/materialize.min.css"
+    media="screen,projection" />
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="css/custom-styles.css">
+</head>
+
+<body>
+  <!-- page container -->
+  <div id="mainContainer" class="container">
+
+    <!-- header -->
+    <header class="valign-wrapper  blue-grey darken-4">
+      <div class="row">
+        <h1 id="headerTitle" class="center-align">Tasks App</h1>
+      </div>
+    </header>
+
+    <!-- opening with link to GitHub -->
+    <div id="opening" class="row">
+      <div class="col l12 m12 s12">
+        <blockquote>
+          <h6>Built with: &nbsp; AWS Lambda, DynamoDB, API Gateway, Node.js, JavaScript, Materialize, and more. Check it
+            out here: <a target="_blank" href="https://github.com/T-travis/tasks-app">GitHub</a></h6>
+        </blockquote>
+      </div>
+    </div>
+
+    <main>
+
+      <div class="row">
+        <!-- todo section-->
+        <div id="todos">
+          <div class="col l10 m10 s12">
+            <input id="inputTask" placeholder="add a new task..." type="text"></input>
+          </div>
+          <!-- buttons -->
+          <div class="col l2 m2 s12 center">
+            <button id="add" type="submit" onclick="createTask()" class="waves-effect blue accent-4">ADD</button>
+            <button id="update" type="submit" onclick="updateTaskButton()"
+              class="waves-effect grey darken-2">UPDATE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- tasks section -->
+      <div class="row">
+        <div class="col l12 m12 s12">
+          <ul class="collection" id="tasksList"></ul>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="/tasks-app/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/tasks-app/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="/tasks-app/node_modules/axios/dist/axios.min.js"></script>
+  <script src="js/todos.js"></script>
+
+</body>
+
+</html>

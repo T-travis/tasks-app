@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#headerTitle {
+	color: white;
+	font-weight: bold;
+}
+
+#opening {
+	margin-bottom: 0;
+}
+
+blockquote {
+	border-left-color: #263238;
+}
+
+blockquote a {
+	font-weight: bold;
+	margin-left: .6em;
+	color: #2962ff;
+}
+
+/** for the todo section **/
+#add {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 2em;
+	margin-bottom: 0.1em;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#update {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 2em;
+	margin-bottom: 0.1em;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#inputTask {
+
+	padding: 0px 20px;
+	display: inline-block;
+	border: 0.1em solid white;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tasksList {
+	word-wrap: break-word;
+}
+
+.taskText {
+	color: black !important;
+	padding-bottom: 0.4em;
+}
+
+.task {
+	border-style: solid;
+	padding: 1em;
+	margin: 1em;
+	border-color: black;
+}
+
+.deleteIcon {
+	color: #f44336;
+	float: right;
+	cursor: pointer;
+	margin-left: 1em;
+}
+
+.updateIcon {
+	margin-right: 1em;
+	color: #2962ff;
+	cursor: pointer;
+}
+
+.updateGray {
+	color: gray;
+}
+
+
+/** change widths for mobile **/
+@media only screen and (max-width: 600px) {
+	#mainContainer {
+		min-width: 100% !important;
+	}
+
+	header .row {
+		min-width: 100% !important;
+	}
+
+	header {
+		max-height: 4rem;
+	}
+
+	header #headerTitle {
+		font-size: 2.5rem;
+	}
+
+}
