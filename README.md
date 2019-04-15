@@ -3,9 +3,9 @@ summary of app....
 
 
 # Contents
-* [Demo Image](https://github.com/T-travis/tasks-app#demo-image)
-* [Architecture and Api Design](https://github.com/T-travis/tasks-app#architecture-and-api-design)
-* [Built With](https://github.com/T-travis/tasks-app#built-with)
+* [Demo Image](https://github.com/T-travis/tasks-app/blob/master/README.md#demo-image)
+* [Architecture and Api Design](https://github.com/T-travis/tasks-app/blob/master/README.md#architecture-and-api-design)
+* [Built With](https://github.com/T-travis/tasks-app/blob/master/README.md#built-with)
 
 
 # Demo Image
