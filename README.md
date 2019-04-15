@@ -1,6 +1,7 @@
 # Tasks App
-summary of app....
-
+This is a tasks application I designed to gain experience making a serverless RESTful API, as well as gaining experience 
+using Node.js, AWS Lambda, API Gateway, and DynamoDB. It incorporates all CRUD (create, read, update, delete) functions 
+using the HTTP methods POST, GET, PUT, and DELETE. 
 
 # Contents
 * [Demo Image](https://github.com/T-travis/tasks-app/blob/master/README.md#demo-image)
